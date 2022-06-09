@@ -12,4 +12,4 @@ def registro (request):
     return render(request, 'core/registro.html')
 
 def registro (request):
-    return render(request, 'core/home copy.html')
+    return render(request, 'core/Carrito.html')
