@@ -8,5 +8,5 @@ urlpatterns=[
     path('',home,name="home"),
     path('quienesSomos',quienesSomos,name="quienesSomos"),
     path('registro',registro,name="registro"),
-    path('registro',registro,name="Carrito"),
+    path('Carrito',registro,name="Carrito"),
 ]

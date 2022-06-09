@@ -38,7 +38,7 @@
                 <a class="nav-link active" aria-current="page" href="{% url 'registro'%}">Registro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'Carrito'%}">Carrito</a>
+                <a class="nav-link active" aria-current="page" href="{%url 'Carrito'%}">Carrito</a>
               </li>
 
             </ul>
@@ -62,10 +62,9 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="item shadow mb-4">
-                            <h3 class="item-title">planta1</h3>
+                            <h3 class="item-title">Planta 1</h3>
                             <!-- <div class="card" style="width: 18rem;" id="margenGaleria"></div> -->
-                            <img src="{%static 'core/img/arbusto1.jpg'%}" class="d-block w-100"  height="400">
-                            <img class="item-image" src="./imagenes/planta1.jpg" class="d-block w-100" alt="..." height="100">
+                            <img class="item-image" src="{%static 'core/img/planta1.jpg'%}" class="d-block w-100" alt="..." height="100">
                             <h4 class="margenText"><br>Descripcion: Lorem ipsum dolor, 
                                 <br>sit amet consectetur adipisicing elit. 
                               </h4></p>
@@ -77,9 +76,9 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="item shadow mb-4">
-                            <h3 class="item-title">planta2</h3>
+                            <h3 class="item-title">Planta 2</h3>
 
-                            <img class="item-image" src="./imagenes/planta2.jpeg" class="d-block w-100" alt="..." height="100">
+                            <img class="item-image" src="{%static 'core/img/planta1.jpg'%}" class="d-block w-100" alt="..." height="100">
                             <h4 class="margenText"><br>Descripcion: Lorem ipsum dolor, 
                                 <br>sit amet consectetur adipisicing elit. 
                               </h4></p>
@@ -93,9 +92,9 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="item shadow mb-4">
-                            <h3 class="item-title">planta3</h3>
+                            <h3 class="item-title">Tierra de hojas 1</h3>
 
-                            <img class="item-image" src="imagenes/tierraHoja.jpg" class="d-block w-100" alt="..." height="100">
+                            <img class="item-image" src="{%static 'core/img/tierraHoja.jpg'%}" class="d-block w-100" alt="..." height="100">
                             <h4 class="margenText"><br>Descripcion: Lorem ipsum dolor, 
                                 <br>sit amet consectetur adipisicing elit. 
                               </h4></p>
@@ -107,8 +106,8 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="item shadow mb-4">
-                            <h3 class="item-title">planta4</h3>
-                            <img class="item-image" src="imagenes/tierraHoja.jpg" class="d-block w-100" alt="..." height="100">
+                            <h3 class="item-title">Tierra de hojas 2</h3>
+                            <img class="item-image" src="{%static 'core/img/tierraHoja.jpg'%}" class="d-block w-100" alt="..." height="100">
                             <h4 class="margenText"><br>Descripcion: Lorem ipsum dolor, 
                                 <br>sit amet consectetur adipisicing elit. 
                               </h4></p>
@@ -123,9 +122,9 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="item shadow mb-4">
-                            <h3 class="item-title">planta5</h3>
+                            <h3 class="item-title">Macetero 1</h3>
 
-                            <img class="item-image" src="imagenes/macetero1.jpg" class="d-block w-100" alt="..." height="100">
+                            <img class="item-image" src="{%static 'core/img/macetero1.jpg'%}" class="d-block w-100" alt="..." height="100">
                             <h4 class="margenText"><br>Descripcion: Lorem ipsum dolor, 
                                 <br>sit amet consectetur adipisicing elit. 
                               </h4></p>
@@ -137,8 +136,8 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="item shadow mb-4">
-                            <h3 class="item-title">planta6</h3>
-                            <img class="item-image" src="{%static 'imagenes/macetero2.jpeg'%}" class="d-block w-100" alt="..." height="100">
+                            <h3 class="item-title">Macetero 2</h3>
+                            <img class="item-image" src="{%static 'core/img/macetero1.jpg'%}" class="d-block w-100" alt="..." height="100">
                             <h4 class="margenText"><br>Descripcion: Lorem ipsum dolor, 
                                 <br>sit amet consectetur adipisicing elit. 
                               </h4></p>
@@ -257,9 +256,9 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
-    <script src="./tienda.js"></script>
+     <!--<script src="./tienda.js"></script>-->
+    <script src="{%static 'core/JS/tienda.js'%}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
