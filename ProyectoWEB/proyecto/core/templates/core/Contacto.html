@@ -2,19 +2,18 @@
 <html lang="en">
     {%load static%}
   <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{%static 'core/css/diseño.css'%}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Inicio!</title>
+    <title>Registro</title>
   </head>
-  <body class="margen" >
-     <!--menu-->    
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body class="p-3 mb-2 bg-secondary text-white">
+      <div class="margen">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home'%}"><img src="{%static 'core/img/36375.png'%}" width="100" height="100"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,48 +42,52 @@
           </div>
         </div>
       </nav>
-
-<!--carrusel-->
-<br>
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="{%static 'core/img/arbusto1.jpg'%}" class="d-block w-100"  height="400">
-      </div>
-      <div class="carousel-item">
-        <img src="{%static 'core/img/macetero5.jpg'%}" class="d-block w-100" height="400">
-      </div>
-      <div class="carousel-item">
-        <img src="{%static 'core/img/arbusto2.png'%}" class="d-block w-100" height="400">
-      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-<!--imagenes-->
-<br>
-<center><h1>Galeria</h1></center>
-<div class="margen">
-    <table class="table">
-    <tr>
-        <td><img class="border border-dark rounded-circle" src="{%static 'core/img/arbusto1.jpg'%}"  height="300" width="300"> </td>
-        <td><img class="border border-dark rounded-circle" src="{%static 'core/img/macetero6.jpg'%}" height="300" width="300"> </td>
-        <td><img class="border border-dark rounded-circle" src="{%static 'core/img/planta5.jpg'%}" height="300" width="300" > </td>
-    </tr>
-    </table>
-</div>
 
 
+    <!--FORMULARIO-->
+    <br>
+    <div class="margen">
+        <div class="p-3 mb-2 bg-primary text-white " ><center><h1>Contacto</h1> </center></div>
+        <center>
+          <div class="p-3 mb-2 bg-light text-dark ">
+              <form class="row g-3">
+                <div class="boxFormulario">
+                  <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label" id="colorTexto2">Nombre</label>
+                    <input type="text" pattern="[A-Za-z]{1,15}" class="form-control" id="validationDefault02" required="">
+                  </div>
+                </div>      
+              <div class="boxFormulario">
+                <div class="col-md-4">
+                  <label for="validationDefaultUsername" class="form-label" id="colorTexto2">Correo</label>
+                  <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="email" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required="">
+                  </div>
+                </div>
+              </div>      
 
+              <div class="boxFormulario">
+                <div class="col-md-4">
+                  <label class="form-label" id="colorTexto2" for="validationDefault02">Mensaje</label>
+                  <input type="text" pattern="[A-Za-z-'']{1,50}" rows="10" cols="50" id="validationDefault02" class="form-control">
+                  <label>ingrese maximo de 50 palabras</label>
+                </div>
+              </div>
+                 <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                  </div>
+        
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      
+       
+    </div>
+    <!--formulario-->
 
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Footer -->
+    <div class="margen">
+     <footer class="text-center text-lg-start bg-light text-muted">
     <!-- Section: Social media -->
     <section
       class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
@@ -180,9 +183,9 @@
       <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
     <!-- Copyright -->
-  </footer>
+     </footer>
+    </div>
   <!-- Footer -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
